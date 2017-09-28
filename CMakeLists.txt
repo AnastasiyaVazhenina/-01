@@ -6,7 +6,7 @@ include_directories(SYSTEM
 
 # enum your files
 add_executable(executable
-	classwork.cpp
+	hello_world.cpp
 )
 
 target_link_libraries(executable)
