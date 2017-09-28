@@ -1,6 +1,7 @@
 #include <iostream>
 #include <cmath>
-int main() {
+int main()
+{
     //1
     std::cout << 3.14 << std::endl;
     //вывод числа пи
