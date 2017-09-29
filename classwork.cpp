@@ -83,7 +83,7 @@ int main()
     double r;
     std::cin >> r;
     double S = 3.1416 * (R * R - r * r);
-    std::cout << S << std::endl; 
+    std::cout << S << std::endl;
     // площадь кольца
     // 11
     std::cout << "Enter the side of the square" << std::endl;
