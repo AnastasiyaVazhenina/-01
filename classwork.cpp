@@ -18,10 +18,10 @@ int main()
     std::cout << 17<< "  " << 14 << "  " << 567 << std::endl;
     // вывод строки чисел с двумя пробелами между числами
     // 5
-    double x;
-    double y;
+    double x = 0;
+    double y = 0;
     std::cout << "Enter a" << std::endl;
-    double a;
+    double a = 0;
     std::cin >> a;
     x = 12 * a * a + 7 * a - 12;
     y = 3 * x * x * x + 4 * x * x - 11 * x + 1;
@@ -30,47 +30,46 @@ int main()
     // формулы
     // 6
     std::cout << "Enter the mass" << std::endl;
-    double m;
+    double m = 0;
     std::cin >> m;
     std::cout << "Enter the amount" << std::endl;
-    double v;
+    double v = 0;
     std::cin >> v;
-    double p;
-    p= m / v;
+    double p = m / v;
     std::cout << "p=" << p << std::endl;
     // рассчет плотности
     // 7
     std::cout << "Enter the number A" << std::endl;
-    double A;
+    double A = 0;
     std::cin >> A;
     std::cout << "Enter the number B" << std::endl;
-    double B;
+    double B = 0;
     std::cin >> B;
     double X = -B / A;
     std::cout << "x=" << X << std::endl;
     // решение линейного уравнения
     // 8
     std::cout << "Enter the coordinates of the fist point" << std::endl;
-    double x1;
+    double x1 = 0;
     std::cin >> x1;
-    double y1;
+    double y1 = 0;
     std::cin >> y1;
     std::cout << "Enter the coordinates of the second point" << std::endl;
-    double x2;
+    double x2 = 0;
     std::cin >> x2;
-    double y2;
+    double y2 = 0;
     std::cin >> y2;
     double distance = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
     std::cout << "R=" << distance << std::endl;
     // вычисления расстояния между точками
     // 9
     std::cout << "Enter the base length of an isosceles trapezoid" << std::endl;
-    double a1;
+    double a1 = 0;
     std::cin >> a1;
-    double b1;
+    double b1 = 0;
     std::cin >> b1;
     std::cout << "Enter the height of this trapezoid" << std::endl;
-    double h;
+    double h = 0;
     std::cin >> h;
     double f = 2*(std::sqrt(((std::abs(b1 - a1)) / 2) * ((std::abs(b1 - a1)) / 2) + h * h));
     double P = a1 + b1 + f;
@@ -78,24 +77,24 @@ int main()
     // периметр трапеции
     // 10
     std::cout << "Enter the outer radius of the ring" << std::endl;
-    double R;
+    double R = 0;
     std::cin >> R;
     std::cout << "Enter the inner radius of the ring" << std::endl;
-    double r;
+    double r = 0;
     std::cin >> r;
     double S = 3.1416 * (R * R - r * r);
     std::cout << S << std::endl;
     // площадь кольца
     // 11
     std::cout << "Enter the side of the square" << std::endl;
-    double l;
+    double l = 0;
     std::cin >> l;
     double P1 = 4 * l;
     std::cout << P1 << std::endl;
     // периметр квадрата
     // 12
     std::cout << "Enter radius" << std::endl;
-    double radius;
+    double radius = 0;
     std::cin >> radius;
     std::cout << "Diameter=" << 2 * radius << std::endl;
     return 0;
