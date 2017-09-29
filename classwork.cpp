@@ -72,7 +72,8 @@ int main()
     std::cout << "Enter the height of this trapezoid" << std::endl;
     double h;
     std::cin >> h;
-    double P = a1 + b1 + 2*(std::sqrt(((std::abs(b1 - a1)) / 2) * ((std::abs(b1 - a1)) / 2) + h * h));
+    double f = 2*(std::sqrt(((std::abs(b1 - a1)) / 2) * ((std::abs(b1 - a1)) / 2) + h * h));
+    double P = a1 + b1 + f;
     std::cout << "Perimeter =" << P << std::endl;
     // периметр трапеции
     // 10
