@@ -60,7 +60,7 @@ int main()
     std::cin >> x2;
     double y2;
     std::cin >> y2;
-    double distance = sqrt(( x2 - x1 ) * (x2 - x1) + ( y2 - y1 ) * (y2 - y1));
+    double distance = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
     std::cout << "R=" << distance << std::endl;
     // вычисления расстояния между точками
     // 9
@@ -72,20 +72,20 @@ int main()
     std::cout << "Enter the height of this trapezoid" << std::endl;
     double h;
     std::cin >> h;
-    double P = a1 + b1 + 2*( sqrt((abs(b1 - a1) / 2) * (abs(b1 - a1) / 2) + h * h ));
+    double P = a1 + b1 + 2*(sqrt((abs(b1 - a1) / 2) * (abs(b1 - a1) / 2) + h * h));
     std::cout << "Perimeter =" << P << std::endl;
     // периметр трапеции
     // 10
     std::cout << "Enter the outer radius of the ring" << std::endl;
     double R;
     std::cin >> R;
-    std::cout << "Enter the inner radius of the ring" << std::endl; 
+    std::cout << "Enter the inner radius of the ring" << std::endl;
     double r;
     std::cin >> r;
-    double S = 3.1416 * ( R * R - r * r);
+    double S = 3.1416 * (R * R - r * r);
     std::cout << S << std::endl; 
-    //площадь кольца
-    //11
+    // площадь кольца
+    // 11
     std::cout << "Enter the side of the square" << std::endl;
     double l;
     std::cin >> l;
