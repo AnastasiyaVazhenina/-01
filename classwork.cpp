@@ -23,7 +23,7 @@ int main()
                     (movablefFigure.first != 'c') && (movablefFigure.first != 'd') &&
                     (movablefFigure.first != 'e') && (movablefFigure.first != 'f') &&
              (movablefFigure.first != 'h'))) || ((movablefFigure.first == staticfFigure.first)
-                                                 && (movablefFigure.second == staticfFigure.second)));
+             && (movablefFigure.second == staticfFigure.second)));
     std::pair<char, int> nextCell;
     do
     {
