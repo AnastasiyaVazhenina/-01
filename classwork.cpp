@@ -8,8 +8,7 @@ int main()
     {
         std::cout << "What figure walks?" << std::endl;
         std::cin >> figure;
-    }
-    while ((figure != 'p') && (figure != 'N') &&
+    } while ((figure != 'p') && (figure != 'N') &&
             (figure != 'Q') && (figure != 'R') && (figure != 'B'));
     std::pair<char, int> movablefFigure;
     std::pair<char, int> staticfFigure;
@@ -19,8 +18,7 @@ int main()
     {
         std::cout << "Initial coordinate?" << std::endl;
         std::cin >> movablefFigure.first >> movablefFigure.second;
-    }
-    while (((movablefFigure.second > 8) ||
+    } while (((movablefFigure.second > 8) ||
             ((movablefFigure.first != 'a') && (movablefFigure.first != 'b') &&
                     (movablefFigure.first != 'c') && (movablefFigure.first != 'd') &&
                     (movablefFigure.first != 'e') && (movablefFigure.first != 'f') &&
@@ -31,8 +29,7 @@ int main()
     {
         std::cout << "Next coordinate?" << std::endl;
         std::cin >> nextCell.first >> nextCell.second;
-    }
-    while ((movablefFigure.second > 8) || ((movablefFigure.first != 'a') &&
+    } while ((movablefFigure.second > 8) || ((movablefFigure.first != 'a') &&
             (movablefFigure.first != 'b') && (movablefFigure.first != 'c') &&
             (movablefFigure.first != 'd') && (movablefFigure.first != 'e') &&
             (movablefFigure.first != 'f') && (movablefFigure.first != 'h')));
