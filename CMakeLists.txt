@@ -4,9 +4,14 @@ include_directories(SYSTEM
     ./
 )
 
-# enum your files
-add_executable(executable
-	classwork.cpp
+set(CMAKE_CXX_FLAGS 
+"${CMAKE_CXX_FLAGS} -std=c++11 -O1 -fsanitize=address -Wall -Wextra -Wno-unused-command-line-argument -Wshadow -Wnon-virtual-dtor -pedantic"
 )
 
-target_link_libraries(executable)
+
+# enum your files
+add_executable(executable
+  main.cpp
+)
+
+target_link_libraries(executable -fsanitize=address)
